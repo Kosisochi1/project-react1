@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding:0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+main {
+  width: 95vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+}
+.title{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform:uppercase;
+}
+.underline {
+  width: 12rem;
+  height: 0.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:cornflowerblue;
+}
+ h1 {
+
+  text-transform: uppercase;
+  line-height: 0.1px;
+  letter-spacing: 0.3rem;
+}
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+  
+}
+.loading {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 6rem;
+  
+}
+.single-resort {
+  border-radius: 0.25rem;
+  margin: 3rem 0px;
+  box-shadow: 0 5px 15ps rgba(0, 0, 0, 0.1);
+  border-style:outset;
+  background-color:beige;
+  
+  
+}
+.single-resort img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+.single-resort-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.single-resort footer{
+  padding: 1.5rem 2rem;
+}
+.btn{
+  display: block;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  padding: 1px 2px;
+  margin: 2rem auto 0 auto;
+  text-transform: capitalize;
+  font-size: 1rem;
+  background-color: darkkhaki; 
+}
+ .removeResort{
+  display:block;
+  margin: 2rem;
+  padding: 1.5px;
+
+}
