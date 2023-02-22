@@ -32,7 +32,7 @@ function App() {
   },[]) 
   if (loading){
     return(
-      <main className='loading'>
+      <main>
         <Loading />
       </main>
     )
