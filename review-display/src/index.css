@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  max-width: 1170px;
+  width: 90vh;
+  margin: 0 auto;
+}
+main{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+}
+.container{
+  max-width: 1170vw;
+  width: 80vw;
+}
+.main-review{
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s linear;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.image-container{
+  position:relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+}
+.image-icon{
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  transform: translateY(25%);
+  background: blue;
+}
+.image-container::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  top: -0.25rem;
+  right: -0.5rem;
+  background: blue;
+}
+.name{
+  margin-bottom: 0.25rem;
+}
+.job{
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  color: blue;
+}
+.nxt, .prv{
+  border-color: transparent;
+  margin: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  color: brown;
+}
+.nxt:hover{
+  background: blue;
+}
+.prv:hover{
+  background: blue;
+}
+.btn{
+  margin: 0 auto;
+  padding: 0.25rem;
+  border-color: transparent;
+  text-transform: uppercase;
+  background: brown;
+  box-shadow: 0 5px 3px rgba(0,0,0,0.2);
+}
+.btn:hover{
+  background: lightcoral;
+}
+
